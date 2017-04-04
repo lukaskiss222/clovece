@@ -46,9 +46,5 @@ if __name__ == "__main__":
                     reference.turn_player(),
                     int(id_thing),dice)
         else:
-            reference = reference.pass_turn() 
-        
-
-
-
+            reference = reference.pass_turn()
 
