@@ -11,12 +11,12 @@ Ako si napríklad máte predstaviť terminálové človeče
 #####Subory
 
 ######main.py
-Hlavny subor obsahuje Objekt State, ktory je nezmenitelny vzydky po volany fukcia, ktora by mala zmenit jeho stav, fukcia vrati noevy objekt State s updatenutymi vecami. <br >
-Obsahuje fukcia ako `dice` ktora orby updatejtovanie hracov. <br >
+Hlavny subor obsahuje Objekt State, ktory vzdycky po volani vrati vrati novy objekt State s updatenutymi vecami. <br >
+Obsahuje funkcia ako `dice` ktora orby updatejtovanie hracov. <br >
 `player_turn` vrati aktualne kolo. <br >
 `print_state` vypise aktualny stav Stae objektu. <br >
 
-Potim uz je lne funkcia main, ktora roby obsluhu k uzivatelovi.
+Podtim uz je len funkcia main, ktora roby obsluhu k uzivatelovi.
 
 ######test.py
-Testovaci subor, ktory otestuje spravnu fukcnost klasy state.
+Testovaci subor, ktory otestuje spravnu funkcnost klasy State.

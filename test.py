@@ -26,6 +26,25 @@ class TestClovece(unittest.TestCase):
             ref = ref.dice(player_id, thing_id, step)
             self.assertEqual(ref.pl[player_id][thing_id],last + step)
 
-    def 
+    def test_not_move(self):
+        ref = main.State()
+        test_count = 6
+        for i in range(test_count):
+            player_id = random.randint(0,3)
+            thing_id = random.randint(0,3)
+            step = random.randint(1,6)
+            last = ref
+            ref = ref.dice(player_id, thing_id, step)
+            for j in range(4):
+                if j == player_id:
+                    continue
+                for thing in range(4):
+                    self.assertEqual(ref.pl[j][thing],last.pl[j][thing])
+            #este pre hraca ktory hybal
+            for thing in range(4):
+                if thing == thing_id:
+                    continue
+                self.assertEqual(ref.pl[player_id][thing],last.pl[player_id][thing])
+
 if __name__ == "__main__":
     unittest.main()
