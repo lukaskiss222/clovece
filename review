@@ -1,0 +1,25 @@
+Chybaju tam drobne detaily pre pep-8 a pythonovu estetiku
+main.py:
+    6, 32: chyba volny riadok
+    37, 43: zbytocne zatvorky v podmienke
+    33, 39, 40, 47: chyba medzera po ciarke/znamienku
+    26: zle odsadenie - to % ma byt pod zaciatkom stringu
+    id_thing, funkcia dice - chcelo by to vystiznejsie meno
+    17 - sice kopirujes pole ako deepcopy, ale premennu player priradzujes celu.
+        prvy krat to problem nie je, ale ked pohnes 2. krat tym istym hracom
+        tak to, co vyberas do player uz nie je tuple ale list. pokial list() z
+        listu nevracia novy list tak je to porusenie immutability.
+test.py:
+    29: zbytocny zaciatok def
+    mozno by bolo fajn mat test nielen ze sa posunie ked ma, ale aj ci sa aj neposunu ked nemaju
+README.md:
+    14: "nezmenitelny vzydky po volany" -> vzdycky, volani
+    14: "fukcia" -> funkcia, je 2x za sebou vo vete
+    14: "noevy" -> novy
+    15: "fukcia", "orby"
+    15: odporucam napisat "ako:<br>"
+    19: "Potim", "lne", "roby", "obsluha k uzivatelovi"
+    22: "fukcnost"; state -> State(alebo aj inak, len treba konzistentnost)
+    "updatenutymi" alebo "updatejnut" - mozno vybrat si jeden sposob, ale skor odporucam nepouzivat a skusit to sformulovat inak.
+    "klasy" - tiez
+    celkovo odporucam rozbit vety na mensie, hlavne tu na 14
