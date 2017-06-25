@@ -6,11 +6,11 @@ Aktuálny stav hry má byť uložený ako jedna imutable premenná, a referencia
 Súčasťou odovzdaného repozitára má byť základná používateľská dokumentácia, stručný popis designu a aspoň základné testovacie programy. 
 Ako si napríklad máte predstaviť terminálové človeče
 
-###Popis Designu
+### Popis Designu
 
-#####Subory
+##### Subory
 
-######main.py
+###### main.py
 Hlavny subor obsahuje Objekt State, ktory vzdycky po volani vrati vrati novy objekt State s updatenutymi vecami. <br >
 Obsahuje funkcia ako `dice` ktora orby updatejtovanie hracov. <br >
 `player_turn` vrati aktualne kolo. <br >
@@ -18,5 +18,5 @@ Obsahuje funkcia ako `dice` ktora orby updatejtovanie hracov. <br >
 
 Podtim uz je len funkcia main, ktora roby obsluhu k uzivatelovi.
 
-######test.py
+###### test.py
 Testovaci subor, ktory otestuje spravnu funkcnost klasy State.
